@@ -1,0 +1,673 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* animation: colorAnimation 10s infinite; */
+  background-color: rgb(0, 0, 75);
+  /* perspective: 1000px; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+
+}
+
+/* @keyframes colorAnimation {
+  0% {
+    background-color: rgb(21, 21, 92);
+  }
+
+  25% {
+      background-color: #05566e;
+    }
+    50% {
+      background-color: #0805b1;
+    }
+    75% {
+      background-color: #616300;
+    }
+     100% {
+      background-color: #5eff8d;
+    }
+} */
+
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #97bbff;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: cursive;
+  font-weight: 200;
+}
+
+/* .navbar {
+  width: 200px;
+    height: 100px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  animation: glowingBorder 2s infinite;
+}
+
+@keyframes glowingBorder {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
+  }
+
+  50% {
+    border-color: rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.5);
+  }
+
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
+  }
+} */
+
+.navbar-logo {
+  max-width: 100%;
+  text-align: center;
+}
+
+.navbar-logo img {
+  width: 40px;
+  /* Specify your desired width here */
+  height: auto;
+}
+
+/* .navbar-logo {
+    font-weight: bold;
+    font-size: 20px;
+  } */
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.nav-item1 {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  margin-right: 20px;
+  /* border: 1px solid rgb(9, 46, 9); */
+  background-color: rgb(0, 0, 75);
+  border-radius: 20px 10px;
+  padding: 2px 2px;
+}
+
+
+.nav-item1 #contact {
+  color: white;
+  margin-right: 20px;
+  /* border: 1px solid rgb(9, 46, 9); */
+  background-color: rgb(106, 106, 238);
+  border-radius: 20px 10px;
+  padding: 2px 2px;
+}
+
+.nav-item1 {
+  margin-right: 25px;
+  /* border: 1px solid rgb(9, 46, 9); */
+  background-color: rgb(0, 0, 75);
+  border-radius: 20px 10px;
+  padding: 2px 2px;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+
+/* Header Seaction */
+.firstElement {
+  margin: 110px 0px;
+  /* border: 2px solid red; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.firstElement .left-e {
+  width: 421px;
+  margin: 5px 22px;
+  padding: 63px 34px;
+  font-size: 19px;
+  font-family: cursive;
+}
+
+.right-e {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY();
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.left-e {
+  order: 1;
+}
+
+.right-e {
+  order: 2;
+
+}
+
+@media (min-width: 768px) {
+  .firstElement {
+    flex-direction: row;
+  }
+
+  .left-e {
+    order: 0;
+    margin-right: 10px;
+    font-size: 5px;
+  }
+
+  .right-e {
+    order: 2;
+  }
+}
+
+.right-e img {
+  width: 20rem;
+  height: 21rem;
+  margin: 24px 40px 0px 0px;
+  /* display: block; */
+  /* border-radius: 2px 5px 10px 20px; */
+}
+
+img {
+  border-radius: 50% 10%;
+  /* border: 10px solid #ff5e5e; */
+  box-shadow: 0 0 20px rgba(255, 94, 94, 0.5);
+}
+
+.intro-txt {
+  text-align: initial;
+}
+
+
+/* Second Header Seaction */
+.aboutElement {
+  margin: 275px 0px;
+  /* border: 2px solid red; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.aboutElement .left-e2 {
+  width: 421px;
+  margin: 5px 22px;
+  padding: 63px 34px;
+  font-size: 19px;
+  font-family: cursive;
+}
+
+.right-e2 {
+  animation: bounce 2s infinite;
+}
+
+.left-e2 {
+  order: 2;
+}
+
+.right-e2 {
+  order: 1;
+
+}
+
+@media (min-width: 768px) {
+  .aboutElement {
+    flex-direction: row;
+  }
+
+  .left-e2 {
+    order: 2;
+    margin-right: 10px;
+  }
+
+  .right-e2 {
+    order: 0;
+  }
+}
+
+.right-e2 img {
+  width: 20rem;
+  height: 21rem;
+  margin: 24px 1px 0px 40px;
+  /* display: block; */
+  /* border-radius: 2px 5px 10px 20px; */
+}
+
+img {
+  border-radius: 50% 10%;
+  /* border: 10px solid #ff5e5e; */
+  box-shadow: 0 0 20px rgba(255, 94, 94, 0.5);
+}
+
+.intro-txt2 {
+  text-align: initial;
+}
+
+.buying-guid {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(28, 28, 71);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 5px;
+  /* width: 300px; */
+  text-align: center;
+}
+
+.buying-guid .img1 {
+  filter: invert(48%);
+  width: 52px;
+  margin: 7px 56px;
+}
+
+.buying-guid:hover {
+  background-color: rgb(0, 0, 75);
+  border: 1px solid pink;
+  border-radius: 5px;
+  animation: glowingBorder 2s infinite;
+}
+
+@keyframes glowingBorder {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
+  }
+
+  50% {
+    border-color: rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.5);
+  }
+
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buying-guid {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* social media links code */
+/* Social media styles */
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  margin: 5px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+/* Rest  the code of responsive design... */
+
+@media screen and (max-width: 768px) {
+  /* body {
+    padding: 10px;
+  } */
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .firstElement,
+  .aboutElement {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .left-e,
+  .right-e,
+  .left-e2,
+  .right-e2 {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .right-e img,
+  .right-e2 img {
+    margin: 20px auto;
+  }
+
+  .buying-guid {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* About Token Roadmap  */
+.token-roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.roadmap-item {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.roadmap-item-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4d8aff;
+  margin: 0 auto 20px;
+  box-shadow: inset;
+  animation: colorAnimation 10s infinite;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: rgb(21, 21, 92);
+  }
+}
+
+/* .roadmap-item-circle:hover {
+background-color: rgb(0, 0, 75);
+box-shadow: inset;
+border: 1px solid snow;
+} */
+
+.roadmap-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 237, 159);
+}
+
+.roadmap-item p {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: cursive;
+}
+
+@media screen and (min-width: 768px) {
+  .roadmap-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+.roadmap-item-circle {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Token tokenomics details */
+.tokenomics {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tokenomics-heading {
+  font-size: 36px;
+  color: #fcffcd;
+  margin-bottom: 20px;
+}
+
+.tokenomics-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tokenomics-item {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 150px;
+  background-color: #012980;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tokenomics-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 237, 159);
+}
+
+.tokenomics-item p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .tokenomics-item {
+    flex: 0 0 33.33%;
+    margin-right: 20px;
+  }
+
+  .tokenomics-item:last-child {
+    margin-right: 0;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #97bbff;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: rgb(0, 0, 75);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .footer-social {
+    text-align: center;
+    border: 2px solid red;
+  } */
+}
