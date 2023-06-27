@@ -161,23 +161,24 @@ body {
 
 /* Header Seaction */
 .firstElement {
-  margin: 110px 0px;
+  margin: 110px 15px;
   /* border: 2px solid red; */
   color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   /* padding: 20px; */
 }
 
 .firstElement .left-e {
   width: 421px;
-  margin: 5px 22px;
+  margin: 5px 80px 0px 0px;
   padding: 63px 34px;
   font-size: 19px;
   font-family: cursive;
+  word-wrap: break-word;
 }
 
 .right-e {
@@ -220,6 +221,12 @@ body {
     flex-direction: row;
   }
 
+ .right-e{
+    /* width: 10rem;
+    height: 11rem; */
+    margin: 24px 0px 0px 0px;
+  }
+
   .left-e {
     order: 0;
     margin-right: 10px;
@@ -234,7 +241,7 @@ body {
 .right-e img {
   width: 20rem;
   height: 21rem;
-  margin: 24px 40px 0px 0px;
+  margin: 24px 40px 0px 80px;
   /* display: block; */
   /* border-radius: 2px 5px 10px 20px; */
 }
@@ -252,14 +259,14 @@ img {
 
 /* Second Header Seaction */
 .aboutElement {
-  margin: 275px 0px;
+  margin: 275px 15px;
   /* border: 2px solid red; */
   color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   /* padding: 20px; */
 }
 
@@ -325,15 +332,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 5px;
+  margin: 5px auto 150px;
   /* width: 300px; */
   text-align: center;
+  padding: auto;
 }
 
 .buying-guid .img1 {
   filter: invert(48%);
   width: 52px;
   margin: 7px 56px;
+  cursor: pointer;
 }
 
 .buying-guid:hover {
@@ -363,7 +372,7 @@ img {
 @media screen and (max-width: 768px) {
   .buying-guid {
     width: 100%;
-    margin: 5px 0;
+    margin: 5px auto 78px;
   }
 }
 
